@@ -25,4 +25,11 @@ class CurrencyConverter:
     def ConvertedAmount(self):
         amount = float(self.conversionRateVar.get())
         convertedAmountVar = float(self.amounttoConvertVar.get()) * amount
-        
+        self.convertdAmountVar.set(format(convertedAmountVar, '10.2f'))
+
+    def delete_all(self):
+        self.amounttoConvertVar.set("")
+        self.conversionRateVar.set("")
+        self.ConvertedAmount.set("")
+
+CurrencyConverter()

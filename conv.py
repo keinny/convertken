@@ -18,6 +18,11 @@ class CurrencyConverter:
         #creating button
 
         btConvertedAmount = Button(window, text="Convert",font="Helvetica 12 bold", bg="blue", fg="white", command=self.ConvertedAmount).grid(row=4,column=2,sticky=E)
-        btConvertedwewqewqeAmount = Button(window, text="Convert",font="Helvetica 12 bold", bg="red", fg="white", command=self.ConvertedAmount).grid(row=4,column=3,sticky=E)
+        btdelete_all = Button(window, text="clear",font="Helvetica 12 bold", bg="red", fg="white", command=self.delete_all).grid(row=4,column=6,padx=25,pady=25,sticky=E)
 
         window.mainloop()
+
+    def ConvertedAmount(self):
+        amount = float(self.conversionRateVar.get())
+        convertedAmountVar = float(self.amounttoConvertVar.get()) * amount
+        

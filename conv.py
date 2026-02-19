@@ -18,6 +18,6 @@ class CurrencyConverter:
         #creating button
 
         btConvertedAmount = Button(window, text="Convert",font="Helvetica 12 bold", bg="blue", fg="white", command=self.ConvertedAmount).grid(row=4,column=2,sticky=E)
-        btConvertedAmount = Button(window, text="Convert",font="Helvetica 12 bold", bg="red", fg="white", command=self.ConvertedAmount).grid(row=4,column=3,sticky=E)
+        btConvertedwewqewqeAmount = Button(window, text="Convert",font="Helvetica 12 bold", bg="red", fg="white", command=self.ConvertedAmount).grid(row=4,column=3,sticky=E)
 
         window.mainloop()
